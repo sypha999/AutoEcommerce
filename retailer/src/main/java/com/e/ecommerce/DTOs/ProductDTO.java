@@ -1,12 +1,25 @@
 package com.e.ecommerce.DTOs;
 
-import lombok.Data;
 
+import com.e.ecommerce.enums.DeliveryOption;
 
+//Product DTO class for creating product
 public class ProductDTO {
     private String name;
+
     private Double price;
     private Integer stock;
+    private DeliveryOption deliveryOption;
+
+    public DeliveryOption getDeliveryOption() {
+        return deliveryOption;
+    }
+
+    public void setDeliveryOption(DeliveryOption deliveryOption) {
+        this.deliveryOption = deliveryOption;
+    }
+
+
 
     public String getName() {
         return name;
@@ -31,4 +44,15 @@ public class ProductDTO {
     public void setStock(Integer stock) {
         this.stock = stock;
     }
+
+    @Override
+    public String toString() {
+        return "ProductDTO{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", deliveryOption=" + deliveryOption +
+                '}';
+    }
+
 }

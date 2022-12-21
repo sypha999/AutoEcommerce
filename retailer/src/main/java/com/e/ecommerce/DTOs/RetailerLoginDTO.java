@@ -2,7 +2,7 @@ package com.e.ecommerce.DTOs;
 
 import lombok.Data;
 
-
+//Retailer Login DTO class for retailer login
 public class RetailerLoginDTO {
     private String email;
     private String password;

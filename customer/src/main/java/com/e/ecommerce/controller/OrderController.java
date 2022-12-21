@@ -12,11 +12,13 @@ public class OrderController {
         this.orderService = orderService;
     }
 
+    //end point for customer to create order
     @PostMapping("/create_order")
     public void create(@RequestBody OrderDto orderDto){
         orderService.createOrder(orderDto);
     }
 
+    //end point for customer to delete order
     @PostMapping("/delete/")
     public void delete(@RequestParam Long id){
         orderService.deleteOrder(id);

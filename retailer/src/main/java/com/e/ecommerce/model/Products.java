@@ -1,10 +1,10 @@
 package com.e.ecommerce.model;
 
 import com.e.ecommerce.enums.DeliveryOption;
-import lombok.Data;
 
 import javax.persistence.*;
 
+//Model for the product database
 @Entity
 public class Products {
     @Id

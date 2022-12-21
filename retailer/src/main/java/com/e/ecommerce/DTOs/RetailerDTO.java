@@ -1,8 +1,8 @@
 package com.e.ecommerce.DTOs;
 
-import lombok.Data;
 
 
+//Retailer DTO class for retailer registration
 public class RetailerDTO {
     private String email;
     private String password;

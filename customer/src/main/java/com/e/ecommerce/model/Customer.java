@@ -4,6 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
+
+//Model for the customer table
 @Data
 @Entity
 public class Customer {

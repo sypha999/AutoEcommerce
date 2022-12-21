@@ -5,6 +5,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
+
+//Model for Order request
 @Entity
 public class OrderRequest {
     @GeneratedValue(strategy = GenerationType.IDENTITY)

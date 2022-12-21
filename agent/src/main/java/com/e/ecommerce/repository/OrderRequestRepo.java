@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+//Repository for Order request
 @Repository
 public interface OrderRequestRepo extends JpaRepository<OrderRequest,Long> {
     List<OrderRequest> findByOrdersAndRequestStatus(Orders orders, RequestStatus requestStatus);

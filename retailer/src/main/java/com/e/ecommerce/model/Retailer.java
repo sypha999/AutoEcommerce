@@ -1,13 +1,13 @@
 package com.e.ecommerce.model;
 
-import com.e.ecommerce.enums.DeliveryOption;
-import lombok.Data;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+//Model for the Retailer database
 @Entity
 public class Retailer {
     @Id

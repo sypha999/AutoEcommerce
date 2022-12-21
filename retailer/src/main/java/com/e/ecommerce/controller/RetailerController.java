@@ -19,26 +19,31 @@ public class RetailerController {
     }
 
 
+    //end point for retailer to register
     @PostMapping("/retailer_register")
     public void registerUser(@RequestBody RetailerDTO retailerDTO){
         retailerService.registerRetailer(retailerDTO);
     }
 
+    //end point for retailer to login
     @PostMapping("/retailer_login")
     public void login(@RequestBody RetailerLoginDTO loginDTO){
         retailerService.login(loginDTO);
     }
 
+    //end point for retailer to logout
     @PostMapping("/retailer_logout")
     public void logout(){
         retailerService.logout();
     }
 
+    //end point for retailer to accept request
     @PostMapping("/accept_request")
     public void accept(@RequestParam Long retailerId, @RequestParam Long orderRequestId){
         retailerService.requestRespond(RequestStatus.ACCEPTED,retailerId,orderRequestId);
     }
 
+    //end point for retailer to reject request
     @PostMapping("/reject_request")
     public void reject(@RequestParam Long retailerId, @RequestParam Long orderRequestId){
         retailerService.requestRespond(RequestStatus.REJECTED,retailerId,orderRequestId);

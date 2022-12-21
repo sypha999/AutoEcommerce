@@ -3,7 +3,7 @@ package com.e.ecommerce.service.serviceImplementation;
 import com.e.ecommerce.DTOs.RetailerLoginDTO;
 import com.e.ecommerce.DTOs.RetailerDTO;
 import com.e.ecommerce.enums.RequestStatus;
-import com.e.ecommerce.exceptionForCustomer.GlobalException1;
+import com.e.ecommerce.exceptionForRetailer.GlobalException1;
 import com.e.ecommerce.model.OrderRequest;
 import com.e.ecommerce.model.Retailer;
 import com.e.ecommerce.repository.OrderRequestRepo;

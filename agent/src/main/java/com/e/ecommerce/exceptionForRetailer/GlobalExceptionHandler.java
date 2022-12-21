@@ -1,4 +1,4 @@
-package com.e.ecommerce.exceptionForCustomer;
+package com.e.ecommerce.exceptionForRetailer;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+//Global exception handler for uncaught errors
 @RestControllerAdvice
-public class GlobalExceptionHandler1 extends ResponseEntityExceptionHandler {
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(GlobalException1.class)
     public ResponseEntity<Response1> handlerForfailedException(final GlobalException1 e){

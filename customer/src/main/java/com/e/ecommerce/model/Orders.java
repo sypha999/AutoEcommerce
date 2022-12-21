@@ -6,6 +6,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 
+//Model for order table
 @Entity
 @Data
 public class Orders {

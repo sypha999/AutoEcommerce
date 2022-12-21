@@ -15,11 +15,13 @@ public class ProductController {
         this.productService = productService;
     }
 
+    //end point for retailer to create product
     @PostMapping("create_product")
     public void createProduct(@RequestBody ProductDTO productDTO){
         productService.createProduct(productDTO);
     }
 
+    //end point for retailer to delete product
     @PostMapping("/delete_product")
     public void deleteProduct(@RequestParam Long id){
         productService.deleteProduct(id);

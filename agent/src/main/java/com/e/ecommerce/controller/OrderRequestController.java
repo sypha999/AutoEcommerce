@@ -17,11 +17,13 @@ public class OrderRequestController {
         this.orderRequestService = orderRequestService;
     }
 
+    //end point to get request from customer
     @GetMapping("/get_requests")
     public void getRequest(@RequestParam Long orderId){
         orderRequestService.findMatchingOrder(orderId);
     }
 
+    //endpoint to send accepted request to customer
     @PostMapping("/send_accepted")
     public List<Retailer> sendAccepted(@RequestParam Long orderId){
         return orderRequestService.sendOrderByBestPreferred(orderId);

@@ -4,6 +4,7 @@ import com.e.ecommerce.DTOs.RetailerLoginDTO;
 import com.e.ecommerce.DTOs.RetailerDTO;
 import com.e.ecommerce.enums.RequestStatus;
 
+//Interface for retailer service
 public interface RetailerService {
     void registerRetailer(RetailerDTO retailerDTO);
     void login(RetailerLoginDTO loginDTO);

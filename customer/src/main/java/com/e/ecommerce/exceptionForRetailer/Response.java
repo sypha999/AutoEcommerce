@@ -1,10 +1,10 @@
-package com.e.ecommerce.exceptionForCustomer;
+package com.e.ecommerce.exceptionForRetailer;
 
-import lombok.Data;
+
 import org.springframework.http.HttpStatus;
 
-
-public class Response1 {
+//Global exception response class
+public class Response {
     private String message;
     private HttpStatus status;
 
@@ -26,7 +26,7 @@ public class Response1 {
 
     @Override
     public String toString() {
-        return "Response1{" +
+        return "Response{" +
                 "message='" + message + '\'' +
                 ", status=" + status +
                 '}';
